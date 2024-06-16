@@ -76,8 +76,6 @@ def download_file(url, filename):
 
     print(f"File downloaded successfully and saved as {filename}")
 
-# Example usage
-download_file("https://example.com/file.zip", "file.zip")
 @app.route('/add_video_url', methods=['POST'])
 def add_video_url():
     video_url = request.args.get('video_url')
@@ -86,8 +84,8 @@ def add_video_url():
     
 
 
-@app.route('/get_video_urls', methods=['GET'])
-def get_video_urls():
+@app.route('/search', methods=['GET'])
+def serach():
     query = request.args.get('query')
     return collection.query(query_texts=query, n_results=10)
 
