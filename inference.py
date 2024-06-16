@@ -1,3 +1,6 @@
+# THIS inference.py IS A PATCH TO https://github.com/TXH-mercury/VALOR 's inference.py!!!
+
+
 from model.pretrain import VALOR
 import os 
 import json
